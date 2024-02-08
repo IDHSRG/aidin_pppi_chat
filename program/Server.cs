@@ -1,3 +1,5 @@
+using Cryptography
+
 public class Server
 {
   public Server() : Form
@@ -62,4 +64,27 @@ public class Server
   {
     //Отправка сигнала на клиент для проверки, отвечает тот или нет
   }
+
+  public bool KeyExchange(Account acc)
+  {
+    Cryptography.CreateKey(true);
+    //Обмен ключами ассиметричного алгоритма для передачи ключей симметричного алгоритма для шифрования/расшифрования данных
+  }
+
+  public Message[] GetMessageHistory(Account acc)
+  {
+    //Возвращение списка сообщений, отправляемых этим аккаунтом
+  }
+  
+  public bool Save(Account acc, Message ms)
+  {
+    //Сохранение полученного письма данным аккаунтом.
+    //Из ms получается получатель, которому также это письмо сохраняется на сервере и при получении будет передано
+  }
+
+  public bool SendMessages(Account acc, Message[] msgs)
+  {
+    //Отправить сообщение/сообщения от сервера к клиенту
+  }
+
 }
