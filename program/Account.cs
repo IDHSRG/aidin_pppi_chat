@@ -1,9 +1,18 @@
 public class Account
 {
   private long userID;
-  public string Name, Surname;
-  public string PhoneNumber;
-  public string Status;
+  private string Name, Surname;
+  private string PhoneNumber;
+  private string Status;
+
+  public GetName();
+  public GetSurname();
+  public GetPhone();
+  public GetStatus();
+  public SetName();
+  public SetSurname();
+  public SetPhone();
+  public SetStatus();
   
   public Account(string phone, string name, string surname)
   {
