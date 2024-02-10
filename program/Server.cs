@@ -22,7 +22,7 @@ public class Server : Form
     /// Принимает также сообщения и сохраняет их у себя, а также пересылает их при запросе от других клиентов (получателей)
     /// </summary>
     /// <returns>Код выполнения работы (-1 в случае сбоя, 0 в случае завершения работы)</returns>
-    public uint ThreadFunc()
+    public int ThreadFunc()
     {
         while (true)
         {

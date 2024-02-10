@@ -77,7 +77,7 @@ public class Client
     /// Принимает также списки сообщений от сервера и сохраняет на устройстве
     /// </summary>
     /// <returns>Код выполнения работы (-1 в случае сбоя, 0 в случае завершения работы)</returns>
-    public uint ThreadFunc()
+    public int ThreadFunc()
     {
         while (true)
         {

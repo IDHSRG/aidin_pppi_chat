@@ -1,0 +1,593 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ConsoleApp1</name>
+    </assembly>
+    <members>
+        <member name="T:Account">
+            <summary>
+            Класс, представляющий учётную запись пользователя
+            </summary>
+        </member>
+        <member name="F:Account.userID">
+            <summary>
+            Уникальный код пользователя, который присваивается ему при регистрации в мессенджере
+            </summary>
+        </member>
+        <member name="F:Account.Name">
+            <summary>
+            Имя пользователя, указанное в аккаунте
+            </summary>
+        </member>
+        <member name="F:Account.Surname">
+            <summary>
+            Фамилия пользователя, указанная в аккаунте
+            </summary>
+        </member>
+        <member name="F:Account.PhoneNumber">
+            <summary>
+            Телефонный номер, на который привязан аккаунт
+            </summary>
+        </member>
+        <member name="F:Account.Status">
+            <summary>
+            Текущий статус аккаунта (в сети, отошёл, не в сети и др.)
+            </summary>
+        </member>
+        <member name="M:Account.GetName">
+            <summary>
+            Получает имя пользователя, указанное в учетной записи
+            </summary>
+            <returns>Имя из учетки</returns>
+        </member>
+        <member name="M:Account.GetSurname">
+            <summary>
+            Получает фамилию пользователя, указанное в учетной записи
+            </summary>
+            <returns>Фамилия из учетки</returns>
+        </member>
+        <member name="M:Account.GetPhone">
+            <summary>
+            Получает фамилию пользователя, указанное в учетной записи
+            </summary>
+            <returns>Номер телефона из учетки</returns>
+        </member>
+        <member name="M:Account.GetStatus">
+            <summary>
+            Получает текущий статус учетной записи (в сети, не в сети и др.)
+            </summary>
+            <returns>Статус учетки</returns>
+        </member>
+        <member name="M:Account.SetName(System.String)">
+            <summary>
+            Привязывает новое имя к учетной записи
+            </summary>
+            <param name="name">Имя</param>
+        </member>
+        <member name="M:Account.SetSurname(System.String)">
+            <summary>
+            Привязывает новую фамилию к учетной записи
+            </summary>
+            <param name="surname">Фамилия</param>
+        </member>
+        <member name="M:Account.SetPhone(System.String)">
+            <summary>
+            Привязывает новый номер телефона к учетной записи
+            </summary>
+            <param name="phone">Номер телефона</param>
+        </member>
+        <member name="M:Account.SetStatus(System.String)">
+            <summary>
+            Устанавливает статус учетной записи
+            </summary>
+            <param name="status">Cтатус</param>
+        </member>
+        <member name="M:Account.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Конструктор класса учетной записи
+            </summary>
+            <param name="phone">Номер телефона</param>
+            <param name="name">Имя</param>
+            <param name="surname">Фамилия</param>
+        </member>
+        <member name="M:Account.op_Equality(Account,Account)">
+            <summary>
+            Перегрузка оператора равенства.
+            Аккаунты считаются равными, если их уникальные ID одинаковы (это единственная неизменяемая часть объекта)
+            </summary>
+            <param name="ac1">Первый аккаунт</param>
+            <param name="ac2">Второй аккаунт</param>
+        </member>
+        <member name="M:Account.op_Inequality(Account,Account)">
+            <summary>
+            Перегрузка оператора равенства.
+            Аккаунты считаются равными, если их уникальные ID одинаковы (это единственная неизменяемая часть объекта)
+            </summary>
+            <param name="ac1">Первый аккаунт</param>
+            <param name="ac2">Второй аккаунт</param>
+        </member>
+        <member name="T:Client">
+            <summary>
+            Класс, представляющий собой модуль для связи с сервером (клиент), получения от него сообщений и хранение их в виде кэша
+            Управляется интерфейсом пользователя и сигналами от сервера.
+            </summary>
+        </member>
+        <member name="F:Client.busy">
+            <summary>
+            Объём занятого кэша
+            </summary>
+        </member>
+        <member name="F:Client.size">
+            <summary>
+            Максимальный объём хэша
+            </summary>
+        </member>
+        <member name="M:Client.#ctor">
+            <summary>
+            Конструктор класса
+            </summary>
+        </member>
+        <member name="M:Client.CreateSystemConfig">
+            <summary>
+            Создание файла информации по системе.<br/>
+            Необходимо для конфигурации работы клиента.<br/>
+            Производится лишь при отсутствии данного файла (при первом запуске или при повреждении файла)
+            </summary>
+        </member>
+        <member name="M:Client.Connect">
+            <summary>
+            Подключение к серверу
+            </summary>
+            <returns>true если подключение успешно<br/>false если подключения не удалось</returns>
+        </member>
+        <member name="M:Client.Login(System.String)">
+            <summary>
+            Авторизация.<br/> 
+            Сервер проверяет наличие номера телефона у себя, отправляет на него письмо с кодом и возвращает клиенту, пользователь должен ввести код.
+            </summary>
+            <returns>true если авторизация успешна<br/>false если авторизация не успешна</returns>
+        </member>
+        <member name="M:Client.Leave">
+            <summary>
+            Выход из учетной записи и отсоединение от сервера
+            </summary>
+        </member>
+        <member name="M:Client.ThreadFunc">
+            <summary>
+            Потоковая функция обработки поступающих сигналов.<br/>
+            Стоит в ожидании и ловит сигналы от сервера, обрабатывает их и посылает обратно/сохраняет изменения у себя
+            Принимает также списки сообщений от сервера и сохраняет на устройстве
+            </summary>
+            <returns>Код выполнения работы (-1 в случае сбоя, 0 в случае завершения работы)</returns>
+        </member>
+        <member name="M:Client.SendDeleteSignal(Account,ConsoleApp1.Message,System.Boolean)">
+            <summary>
+            Отправка сигнала серверу об удалении данного сообщения<br/>
+            Можно удалить сообщение только для себя или для получателя тоже
+            </summary>
+            <param name="reciever">Получатель сообщения</param>
+            <param name="ms">Сообщение, которое надо удалить</param>
+            <param name="isClear">Если true - удалить и для получателя</param>
+            <returns>true - сервер ответил на сигнал удовлетворительно<br/>false - cервер не ответил или отказал в обработке сигнала</returns>
+        </member>
+        <member name="M:Client.SendReadedSignal(Account,Account,ConsoleApp1.Message)">
+            <summary>
+            Отправка сигнала серверу о прочтении данного письма<br/>
+            </summary>
+            <param name="reciever">Учетная запись получателя сообщения</param>
+            <param name="ms">Сообщение</param>
+            <param name="sender">Учетная запись отправителя сообщения</param>
+            <returns>true - сервер ответил на сигнал удовлетворительно<br/>false - cервер не ответил или отказал в обработке сигнала</returns>
+        </member>
+        <member name="M:Client.SendRecievedSignal(Account,Account,ConsoleApp1.Message)">
+            <summary>
+            Отправка сигнала серверу о успешной загрузке данного письма<br/>
+            </summary>
+            <param name="reciever">Учетная запись получателя сообщения</param>
+            <param name="ms">Сообщение</param>
+            <param name="sender">Учетная запись отправителя сообщения</param>
+            <returns>true - сервер ответил на сигнал удовлетворительно<br/>false - cервер не ответил или отказал в обработке сигнала</returns>
+        </member>
+        <member name="M:Client.SendMessage(ConsoleApp1.Message,System.Byte[])">
+            <summary>
+            Отправить сообщение на сервер, предварительно его зашифроваыв<br/>
+            </summary>
+            <param name="msg">Сообщение</param>
+            <param name="key">Ключ для шифрования содержимого сообщения перед отправкой</param>
+        </member>
+        <member name="M:Client.KeyExchange">
+            <summary>
+            Отправка сигнала серверу об обмене ключами шифрования<br/>
+            Отправка ключей шифрования серверу и ожидание получения ключей от сервера
+            </summary>
+            <returns>true - сервер ответил на сигнал удовлетворительно<br/>false - cервер не ответил или отказал в обработке сигнала</returns>
+        </member>
+        <member name="M:Client.Store">
+            <summary>
+            Сохранение загруженные сообщений от сервера на утройстве в виде кэша
+            </summary>
+        </member>
+        <member name="M:Client.OfflineGet">
+            <summary>
+            Подгрузка кэша до возможности обновления
+            </summary>
+        </member>
+        <member name="M:Client.ClearOld">
+            <summary>
+            Очистка старых сообщений, если объём занятого места превышает максимальный для кэша
+            </summary>
+        </member>
+        <member name="T:Cryptography">
+            <summary>
+            Класс, реализующий основные необходимые методы работы с криптографией
+            </summary>
+        </member>
+        <member name="M:Cryptography.CreateKey(System.Boolean)">
+            <summary>
+            Создания ключей шифрования
+            </summary>
+            <returns>Пара ключей шифрования</returns>
+            <param name="isAsym">true - создание ключей ассиметричного алгоритма<br/>
+            false - создание ключей симметричного алгоритма</param>
+        </member>
+        <member name="M:Cryptography.EncryptFile(System.String,System.Byte[])">
+            <summary>
+            Шифрование файла 
+            </summary>
+            <returns>Зашифрованный файл в байтовом представлении</returns>
+            <param name="path">Путь к файлу</param>
+            <param name="key">Ключ шифрования</param>
+        </member>
+        <member name="M:Cryptography.EncryptMessage(ConsoleApp1.Message,System.Byte[])">
+            <summary>
+            Шифрование сообщения
+            </summary>
+            <returns>Зашифрованное сообщение в байтовом представлении</returns>
+            <param name="msg">Сообщение</param>
+            <param name="key">Ключ шифрования</param>
+        </member>
+        <member name="M:Cryptography.DecryptFile(System.Byte[],System.Byte[])">
+            <summary>
+            Расшифровать зашифрованный файл
+            </summary>
+            <returns>Расшифрованный файл в байтовом представлении</returns>
+            <param name="file">Зашифрованный файл</param>
+            <param name="key">Ключ шифрования</param>
+        </member>
+        <member name="M:Cryptography.DecryptMessage(System.Byte[],System.Byte[])">
+            <summary>
+            Расшифровать зашифрованное сообщение
+            </summary>
+            <returns>Расшифрованное сообщение</returns>
+            <param name="msg">Зашифрованное сообщение</param>
+            <param name="key">Ключ шифрования</param>
+        </member>
+        <member name="M:Cryptography.EncryptSymKey(System.Byte[][],System.Byte[])">
+            <summary>
+            Шифрование ключей симметричного алгоритма асимметричным для последующей передачи
+            </summary>
+            <returns>Пара зашифрованных ключей</returns>
+            <param name="asymKey">Ключ шифрования асимметричного алгоритма</param>
+            <param name="key">Пара ключей симметричного алгоритма</param>
+        </member>
+        <member name="T:Emoji">
+            <summary>
+            Класс, представляющий эмодзи
+            </summary>
+        </member>
+        <member name="M:Emoji.#ctor(System.String)">
+            <summary>
+            Конструктор класса
+            </summary>
+            <param name="path">Путь к файлу изображения эмодзи</param>
+        </member>
+        <member name="M:Emoji.Compress(System.String)">
+            <summary>
+            Сжатия файла изображения до размера эмодзи
+            </summary>
+            <param name="path">Путь к файлу изображения</param>
+            <returns>Уменьшенное изображение для эмодзи</returns>
+        </member>
+        <member name="T:Interface.Theme">
+            <summary>
+            Цветовая тема интерфейса<br/>
+            Включает два цвета: задний фон и передний фон
+            </summary>
+        </member>
+        <member name="F:Interface.Theme.background">
+            <summary>
+            Цвет фона
+            </summary>
+        </member>
+        <member name="F:Interface.Theme.foreground">
+            <summary>
+            Цвет пузырьков, окошек и др.
+            </summary>
+        </member>
+        <member name="T:Interface.Font_Style">
+            <summary>
+            Класс, представляющий собой модуль cервера.<br/>
+            Ожидает, получает сигналы от клиентов, устанавливает с ними соединение, обрабатывает их сигналы, хранит сообщения и пересылает их клиентам<br/>
+            Устанавливется отдельно от приложения на устройстве (или сервере) и работает постоянно
+            </summary>
+        </member>
+        <member name="F:Interface.Font_Style.fontfamily">
+            <summary>
+            Стиль шрифта
+            </summary>
+        </member>
+        <member name="F:Interface.Font_Style.fontsize">
+            <summary>
+            Размер шрифта
+            </summary>
+        </member>
+        <member name="F:Interface.Font_Style.fontweight">
+            <summary>
+            Жирность шрифта
+            </summary>
+        </member>
+        <member name="F:Interface.Font_Style.сolor">
+            <summary>
+            Цвет шрифта
+            </summary>
+        </member>
+        <member name="F:Interface.Font_Style.isItalic">
+            <summary>
+            Является ли шрифт курсивом
+            </summary>
+        </member>
+        <member name="T:Interface.Interface">
+            <summary>
+            Класс, представляющий интерфейс чата, через который осуществляется управление клиентом и в котором выводятся все сообщения
+            </summary>
+        </member>
+        <member name="F:Interface.Interface.language">
+            <summary>
+            Текущая локализация
+            </summary>
+        </member>
+        <member name="F:Interface.Interface.font">
+            <summary>
+            Текущий шрифт
+            </summary>
+        </member>
+        <member name="F:Interface.Interface.theme">
+            <summary>
+            Текущая тема
+            </summary>
+        </member>
+        <member name="F:Interface.Interface.alwaysCompressImages">
+            <summary>
+            Настройка автоматического сжатия изображений для меньшего веса отправки
+            </summary>
+        </member>
+        <member name="F:Interface.Interface.hashMaxSize">
+            <summary>
+            Максимальный размер хэша данных
+            </summary>
+        </member>
+        <member name="M:Interface.Interface.CheckConfig">
+            <summary>
+            Проверка наличия файла конфигурации интерфейса (тема, шрифт и т.д.)
+            </summary>
+            <returns>true - файл конфигурации интерфейса найден<br/>false - файл конфигурации интерфейса повреждён или не найден</returns>
+        </member>
+        <member name="M:Interface.Interface.SaveConfig(Interface.Theme,Interface.Font_Style)">
+            <summary>
+            Перезаписать данные конфигурации в файл
+            </summary>
+            <returns>true - перезапись успешна<br/>false - произошла ошибка записи</returns>
+        </member>
+        <member name="M:Interface.Interface.#ctor">
+            <summary>
+            Стандартный конструктор интерфейса
+            </summary>
+        </member>
+        <member name="M:Interface.Interface.#ctor(Interface.Theme,Interface.Font_Style,System.String)">
+            <summary>
+            Конструктор интерфейса по указанным настройкам (после перенастройки стилей в настройках запускается этот конструктор)
+            </summary>
+        </member>
+        <member name="M:Interface.Interface.AddContact(System.String)">
+            <summary>
+            Добавление контакта в список контактов<br/>
+            Посылает сигнал серверу о добавлении контакта
+            </summary>
+            <returns>true - контакт добавлен<br/>false - неверный номер или другая ошибка при добавлении контакта</returns>
+        </member>
+        <member name="M:Interface.Interface.MessageList_MouseWheel(System.Object,Interface.MouseEventArgs)">
+            <summary>
+            Прокрутка колесика мыши в истории сообщений с контактом
+            </summary>
+        </member>
+        <member name="M:Interface.Interface.ContactsList_MouseWheel(System.Object,Interface.MouseEventArgs)">
+            <summary>
+            Прокрутка колесика мыши в списке контактов
+            </summary>
+        </member>
+        <member name="M:Interface.Interface.EmojiesPanel_MouseWheel(System.Object,Interface.MouseEventArgs)">
+            <summary>
+            Прокрутка колесика мыши в панели с эмодзи
+            </summary>
+        </member>
+        <member name="M:Interface.Interface.AddImageButton_MouseDown(System.Object,Interface.MouseEventArgs)">
+            <summary>
+            Нажатие кнопки "добавить изображение"
+            </summary>
+        </member>
+        <member name="M:Interface.Interface.SendButton_MouseDown(System.Object,Interface.MouseEventArgs)">
+            <summary>
+            Нажатие кнопки "Отправить" или Enter
+            </summary>
+        </member>
+        <member name="M:Interface.Interface.ChangeLanguage(System.String)">
+            <summary>
+            Изменение локализации интерфейса
+            </summary>
+            <param name="lang">Язык</param>
+            <returns>true - язык изменён<br/>false - такого языка нет</returns>
+        </member>
+        <member name="M:Interface.Interface.ChangeFont(System.String,System.Int16,System.Int16,System.Drawing.Color,System.Boolean)">
+            <summary>
+            Изменение стиля шрифта и сохранение в конфигурации
+            </summary>
+            <param name="family">Стиль</param>
+            <param name="size">Размер</param>
+            <param name="weight">Жирность</param>
+            <param name="color">Цвет</param>
+            <param name="italic">Курсив?</param>
+            <returns>Новый стиль шрифта</returns>
+        </member>
+        <member name="M:Interface.Interface.ChangeTheme(Interface.Theme)">
+            <summary>
+            Изменение темы интерфейса на сущесвтующую, сохранение в конфигурации
+            </summary>
+            <param name="t">Тема интерфейса</param>
+            <returns>Новая тема интерфейса</returns>
+        </member>
+        <member name="M:Interface.Interface.ChangeTheme(System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            Изменение темы интерфейса на новую, сохранение в конфигурации
+            </summary>
+            <param name="back">Задний фон</param>
+            <param name="fore">Передний фон</param>
+            <returns>Новая тема интерфейса</returns>
+        </member>
+        <member name="M:Interface.Interface.ChangeСompression(System.Boolean)">
+            <summary>
+            Изменение настройки автоматического сжатия изображений перед отправкой
+            </summary>
+            <param name="b">true - с автоматическим сжатие<br/> false - без автоматического сжатия</param>
+        </member>
+        <member name="M:Interface.Interface.SetMaxCash(System.UInt32)">
+            <summary>
+            Установка максимального размера кэша сообщений
+            </summary>
+            <param name="size">Размер кэша</param>
+        </member>
+        <member name="M:Interface.Interface.Search(System.String,System.String,System.Boolean,System.DateTime,System.DateTime,System.DateTime)">
+            <summary>
+            Поиск сообщения по указанным данным<br/>
+            Данные могут быть NULL - в таком случае поиск по ним не осуществляется
+            </summary>
+            <param name="who">Кому</param>
+            <param name="text">Содержимое</param>
+            <param name="isImage">Содержит изображение</param>
+            <param name="fromWhen">С какой даты</param>
+            <param name="beforeWhen">Перед какой датой</param>
+            <param name="when">Конкретная дата</param>
+        </member>
+        <member name="M:Interface.Interface.Filter(System.String,System.String,System.Boolean,System.DateTime,System.DateTime,System.DateTime)">
+            <summary>
+            Фильтрация сообщений по указанным данным<br/>
+            Данные могут быть NULL - в таком случае фильтрация по ним не осуществляется
+            </summary>
+            <param name="who">Кому?</param>
+            <param name="text">Содержимое</param>
+            <param name="isImage">Содержит изображение</param>
+            <param name="fromWhen">С какой даты</param>
+            <param name="beforeWhen">Перед какой датой</param>
+            <param name="when">Конкретная дата</param>
+        </member>
+        <member name="T:Server">
+            <summary>
+            Класс, представляющий собой модуль cервера.<br/>
+            Ожидает, получает сигналы от клиентов, устанавливает с ними соединение, обрабатывает их сигналы, хранит сообщения и пересылает их клиентам<br/>
+            Устанавливется отдельно от приложения на устройстве (или сервере) и работает постоянно
+            </summary>
+        </member>
+        <member name="M:Server.#ctor">
+            <summary>
+            Конструктор класса.
+            </summary>
+        </member>
+        <member name="M:Server.ThreadFunc">
+            <summary>
+            Потоковая функция обработки поступающих сигналов.<br/>
+            Стоит в ожидании и ловит сигналы от клиентов, обрабатывает их и посылает обратно/сохраняет изменения у себя
+            Принимает также сообщения и сохраняет их у себя, а также пересылает их при запросе от других клиентов (получателей)
+            </summary>
+            <returns>Код выполнения работы (-1 в случае сбоя, 0 в случае завершения работы)</returns>
+        </member>
+        <member name="M:Server.SendDeleteSignal(Account,Account,ConsoleApp1.Message,System.Boolean)">
+            <summary>
+            Отправка сигнала клиенту об удалении данного сообщения<br/>
+            Может быть отправлено как отправителю, так и получателю, в зависимости от получаемого сигнала от клиента
+            </summary>
+            <param name="sender">Отправитель сообщения</param>
+            <param name="reciever">Получатель сообщения</param>
+            <param name="ms">Сообщение, которое надо удалить</param>
+            <param name="isClear">Если true - отправить сигнал и для получателя</param>
+            <returns>true - клиент ответил на сигнал<br/>false - клиент не ответил</returns>
+        </member>
+        <member name="M:Server.SendReadedSignal(Account,Account,ConsoleApp1.Message)">
+            <summary>
+            Отправка сигнала клиенту о прочтении его сообщения получателем<br/>
+            </summary>
+            <param name="sender">Отправитель сообщения</param>
+            <param name="reciever">Получатель сообщения</param>
+            <param name="ms">Прочитанное сообщение</param>
+            <returns>true - клиент ответил на сигнал<br/>false - клиент не ответил</returns>
+        </member>
+        <member name="M:Server.SendRecievedSignal(Account,Account,ConsoleApp1.Message)">
+            <summary>
+            Отправка сигнала клиенту о том, что его письмо было загружено клиентом получателя<br/>
+            </summary>
+            <param name="sender">Отправитель сообщения</param>
+            <param name="reciever">Получатель сообщения</param>
+            <param name="ms">Загруженное сообщение</param>
+            <returns>true - клиент ответил на сигнал<br/>false - клиент не ответил</returns>
+        </member>
+        <member name="M:Server.SetStatus(Account,System.String)">
+            <summary>
+            Установка статуса учетной записи<br/>
+            Может быть "в сети", "не в сети", "отошёл" и т.д.<br/>
+            При изменении статуса всем активным клиентам посылается сигнал об изменении статуса контакта
+            </summary>
+            <param name="acc">Учетная запись, подверженная изменению</param>
+            <param name="stat">Новый статус</param>
+        </member>
+        <member name="M:Server.BroadcastStatus(Account)">
+            <summary>
+            Отправка всем активным контактам учетной записи сигнал об изменении статуса учетной записи
+            </summary>
+            <param name="acc">Учетная запись</param>
+        </member>
+        <member name="M:Server.Ping(Account)">
+            <summary>
+            Отправка клиенту учетной записи сигнала проверки, подключен тот или нет, ожидание ответа
+            </summary>
+            <param name="acc">Учетная запись для пинга</param>
+            <returns>true - клиент ответил<br/>false - клиент не ответил</returns>
+        </member>
+        <member name="M:Server.KeyExchange(Account)">
+            <summary>
+            Обмен ключами шифрования с клиентом данного аккаунта
+            </summary>
+            <param name="acc">Учетная запись клиента</param>
+            <returns>true - обмен произошёл успешно<br/>false - при обмене произошла некоторая ошибка</returns>
+        </member>
+        <member name="M:Server.GetMessageHistory(Account)">
+            <summary>
+            Получение истории сообщений данной учетной записи
+            </summary>
+            <param name="acc">Учетная запись клиента</param>
+            <returns>Массив сообщений от данной учетной записи</returns>
+        </member>
+        <member name="M:Server.Save(Account,ConsoleApp1.Message)">
+            <summary>
+            Сохранение полученного сообщения за учетной записью отправителя/получателя
+            </summary>
+            <param name="acc">Учетная запись клиента</param>
+            <param name="ms">Сообщение для сохранения</param>
+        </member>
+        <member name="M:Server.SendMessages(Account,ConsoleApp1.Message[])">
+            <summary>
+            Передача истории сообщений учетной записи
+            </summary>
+            <param name="acc">Учетная запись клиента</param>
+            <param name="msgs">Массив сообщений учетной записи</param>
+            <returns>true - отправка произошла успешно<br/>false - передача неудалась или была завершена неверно</returns>
+        </member>
+    </members>
+</doc>

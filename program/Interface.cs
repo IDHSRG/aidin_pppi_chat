@@ -29,15 +29,15 @@ namespace Interface
         /// <summary>
         /// Стиль шрифта
         /// </summary>
-        Font font-family;
+        Font fontfamily;
         /// <summary>
         /// Размер шрифта
         /// </summary>
-        short font-size;
+        short fontsize;
         /// <summary>
         /// Жирность шрифта
         /// </summary>
-        int font-weight;
+        int fontweight;
         /// <summary>
         /// Цвет шрифта
         /// </summary>

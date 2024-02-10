@@ -116,7 +116,18 @@ public class Account
     /// </summary>
     /// <param name="ac1">Первый аккаунт</param>
     /// <param name="ac2">Второй аккаунт</param>
-    public override operator==(Account ac1, Account ac2)
+    public static override bool operator==(Account ac1, Account ac2)
+    {
+        //Сравнение аккаунтов по их ID, потому что остальные данные могут меняться
+    }
+
+    /// <summary>
+    /// Перегрузка оператора неравенства.
+    /// Аккаунты считаются неравными, если их уникальные ID не совпадают(это единственная неизменяемая часть объекта)
+    /// </summary>
+    /// <param name="ac1">Первый аккаунт</param>
+    /// <param name="ac2">Второй аккаунт</param>
+    public static override bool operator !=(Account ac1, Account ac2)
     {
         //Сравнение аккаунтов по их ID, потому что остальные данные могут меняться
     }
