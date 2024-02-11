@@ -1,0 +1,719 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Accounts
+  name: Accounts
+  href: api/Accounts.html
+  commentId: N:Accounts
+  fullName: Accounts
+  nameWithType: Accounts
+- uid: Accounts.Account
+  name: Account
+  href: api/Accounts.Account.html
+  commentId: T:Accounts.Account
+  fullName: Accounts.Account
+  nameWithType: Account
+- uid: Accounts.Account.#ctor(System.String,System.String,System.String)
+  name: Account(String, String, String)
+  href: api/Accounts.Account.html#Accounts_Account__ctor_System_String_System_String_System_String_
+  commentId: M:Accounts.Account.#ctor(System.String,System.String,System.String)
+  fullName: Accounts.Account.Account(System.String, System.String, System.String)
+  nameWithType: Account.Account(String, String, String)
+- uid: Accounts.Account.#ctor*
+  name: Account
+  href: api/Accounts.Account.html#Accounts_Account__ctor_
+  commentId: Overload:Accounts.Account.#ctor
+  isSpec: "True"
+  fullName: Accounts.Account.Account
+  nameWithType: Account.Account
+- uid: Accounts.Account.GetName
+  name: GetName()
+  href: api/Accounts.Account.html#Accounts_Account_GetName
+  commentId: M:Accounts.Account.GetName
+  fullName: Accounts.Account.GetName()
+  nameWithType: Account.GetName()
+- uid: Accounts.Account.GetName*
+  name: GetName
+  href: api/Accounts.Account.html#Accounts_Account_GetName_
+  commentId: Overload:Accounts.Account.GetName
+  isSpec: "True"
+  fullName: Accounts.Account.GetName
+  nameWithType: Account.GetName
+- uid: Accounts.Account.GetPhone
+  name: GetPhone()
+  href: api/Accounts.Account.html#Accounts_Account_GetPhone
+  commentId: M:Accounts.Account.GetPhone
+  fullName: Accounts.Account.GetPhone()
+  nameWithType: Account.GetPhone()
+- uid: Accounts.Account.GetPhone*
+  name: GetPhone
+  href: api/Accounts.Account.html#Accounts_Account_GetPhone_
+  commentId: Overload:Accounts.Account.GetPhone
+  isSpec: "True"
+  fullName: Accounts.Account.GetPhone
+  nameWithType: Account.GetPhone
+- uid: Accounts.Account.GetStatus
+  name: GetStatus()
+  href: api/Accounts.Account.html#Accounts_Account_GetStatus
+  commentId: M:Accounts.Account.GetStatus
+  fullName: Accounts.Account.GetStatus()
+  nameWithType: Account.GetStatus()
+- uid: Accounts.Account.GetStatus*
+  name: GetStatus
+  href: api/Accounts.Account.html#Accounts_Account_GetStatus_
+  commentId: Overload:Accounts.Account.GetStatus
+  isSpec: "True"
+  fullName: Accounts.Account.GetStatus
+  nameWithType: Account.GetStatus
+- uid: Accounts.Account.GetSurname
+  name: GetSurname()
+  href: api/Accounts.Account.html#Accounts_Account_GetSurname
+  commentId: M:Accounts.Account.GetSurname
+  fullName: Accounts.Account.GetSurname()
+  nameWithType: Account.GetSurname()
+- uid: Accounts.Account.GetSurname*
+  name: GetSurname
+  href: api/Accounts.Account.html#Accounts_Account_GetSurname_
+  commentId: Overload:Accounts.Account.GetSurname
+  isSpec: "True"
+  fullName: Accounts.Account.GetSurname
+  nameWithType: Account.GetSurname
+- uid: Accounts.Account.op_Equality(Accounts.Account,Accounts.Account)
+  name: Equality(Account, Account)
+  href: api/Accounts.Account.html#Accounts_Account_op_Equality_Accounts_Account_Accounts_Account_
+  commentId: M:Accounts.Account.op_Equality(Accounts.Account,Accounts.Account)
+  fullName: Accounts.Account.Equality(Accounts.Account, Accounts.Account)
+  nameWithType: Account.Equality(Account, Account)
+- uid: Accounts.Account.op_Equality*
+  name: Equality
+  href: api/Accounts.Account.html#Accounts_Account_op_Equality_
+  commentId: Overload:Accounts.Account.op_Equality
+  isSpec: "True"
+  fullName: Accounts.Account.Equality
+  nameWithType: Account.Equality
+- uid: Accounts.Account.op_Inequality(Accounts.Account,Accounts.Account)
+  name: Inequality(Account, Account)
+  href: api/Accounts.Account.html#Accounts_Account_op_Inequality_Accounts_Account_Accounts_Account_
+  commentId: M:Accounts.Account.op_Inequality(Accounts.Account,Accounts.Account)
+  fullName: Accounts.Account.Inequality(Accounts.Account, Accounts.Account)
+  nameWithType: Account.Inequality(Account, Account)
+- uid: Accounts.Account.op_Inequality*
+  name: Inequality
+  href: api/Accounts.Account.html#Accounts_Account_op_Inequality_
+  commentId: Overload:Accounts.Account.op_Inequality
+  isSpec: "True"
+  fullName: Accounts.Account.Inequality
+  nameWithType: Account.Inequality
+- uid: Accounts.Account.SetName(System.String)
+  name: SetName(String)
+  href: api/Accounts.Account.html#Accounts_Account_SetName_System_String_
+  commentId: M:Accounts.Account.SetName(System.String)
+  fullName: Accounts.Account.SetName(System.String)
+  nameWithType: Account.SetName(String)
+- uid: Accounts.Account.SetName*
+  name: SetName
+  href: api/Accounts.Account.html#Accounts_Account_SetName_
+  commentId: Overload:Accounts.Account.SetName
+  isSpec: "True"
+  fullName: Accounts.Account.SetName
+  nameWithType: Account.SetName
+- uid: Accounts.Account.SetPhone(System.String)
+  name: SetPhone(String)
+  href: api/Accounts.Account.html#Accounts_Account_SetPhone_System_String_
+  commentId: M:Accounts.Account.SetPhone(System.String)
+  fullName: Accounts.Account.SetPhone(System.String)
+  nameWithType: Account.SetPhone(String)
+- uid: Accounts.Account.SetPhone*
+  name: SetPhone
+  href: api/Accounts.Account.html#Accounts_Account_SetPhone_
+  commentId: Overload:Accounts.Account.SetPhone
+  isSpec: "True"
+  fullName: Accounts.Account.SetPhone
+  nameWithType: Account.SetPhone
+- uid: Accounts.Account.SetStatus(System.String)
+  name: SetStatus(String)
+  href: api/Accounts.Account.html#Accounts_Account_SetStatus_System_String_
+  commentId: M:Accounts.Account.SetStatus(System.String)
+  fullName: Accounts.Account.SetStatus(System.String)
+  nameWithType: Account.SetStatus(String)
+- uid: Accounts.Account.SetStatus*
+  name: SetStatus
+  href: api/Accounts.Account.html#Accounts_Account_SetStatus_
+  commentId: Overload:Accounts.Account.SetStatus
+  isSpec: "True"
+  fullName: Accounts.Account.SetStatus
+  nameWithType: Account.SetStatus
+- uid: Accounts.Account.SetSurname(System.String)
+  name: SetSurname(String)
+  href: api/Accounts.Account.html#Accounts_Account_SetSurname_System_String_
+  commentId: M:Accounts.Account.SetSurname(System.String)
+  fullName: Accounts.Account.SetSurname(System.String)
+  nameWithType: Account.SetSurname(String)
+- uid: Accounts.Account.SetSurname*
+  name: SetSurname
+  href: api/Accounts.Account.html#Accounts_Account_SetSurname_
+  commentId: Overload:Accounts.Account.SetSurname
+  isSpec: "True"
+  fullName: Accounts.Account.SetSurname
+  nameWithType: Account.SetSurname
+- uid: Clients
+  name: Clients
+  href: api/Clients.html
+  commentId: N:Clients
+  fullName: Clients
+  nameWithType: Clients
+- uid: Clients.Client
+  name: Client
+  href: api/Clients.Client.html
+  commentId: T:Clients.Client
+  fullName: Clients.Client
+  nameWithType: Client
+- uid: Clients.Client.#ctor
+  name: Client()
+  href: api/Clients.Client.html#Clients_Client__ctor
+  commentId: M:Clients.Client.#ctor
+  fullName: Clients.Client.Client()
+  nameWithType: Client.Client()
+- uid: Clients.Client.#ctor*
+  name: Client
+  href: api/Clients.Client.html#Clients_Client__ctor_
+  commentId: Overload:Clients.Client.#ctor
+  isSpec: "True"
+  fullName: Clients.Client.Client
+  nameWithType: Client.Client
+- uid: Clients.Client.ClearOld
+  name: ClearOld()
+  href: api/Clients.Client.html#Clients_Client_ClearOld
+  commentId: M:Clients.Client.ClearOld
+  fullName: Clients.Client.ClearOld()
+  nameWithType: Client.ClearOld()
+- uid: Clients.Client.ClearOld*
+  name: ClearOld
+  href: api/Clients.Client.html#Clients_Client_ClearOld_
+  commentId: Overload:Clients.Client.ClearOld
+  isSpec: "True"
+  fullName: Clients.Client.ClearOld
+  nameWithType: Client.ClearOld
+- uid: Clients.Client.Connect
+  name: Connect()
+  href: api/Clients.Client.html#Clients_Client_Connect
+  commentId: M:Clients.Client.Connect
+  fullName: Clients.Client.Connect()
+  nameWithType: Client.Connect()
+- uid: Clients.Client.Connect*
+  name: Connect
+  href: api/Clients.Client.html#Clients_Client_Connect_
+  commentId: Overload:Clients.Client.Connect
+  isSpec: "True"
+  fullName: Clients.Client.Connect
+  nameWithType: Client.Connect
+- uid: Clients.Client.CreateSystemConfig
+  name: CreateSystemConfig()
+  href: api/Clients.Client.html#Clients_Client_CreateSystemConfig
+  commentId: M:Clients.Client.CreateSystemConfig
+  fullName: Clients.Client.CreateSystemConfig()
+  nameWithType: Client.CreateSystemConfig()
+- uid: Clients.Client.CreateSystemConfig*
+  name: CreateSystemConfig
+  href: api/Clients.Client.html#Clients_Client_CreateSystemConfig_
+  commentId: Overload:Clients.Client.CreateSystemConfig
+  isSpec: "True"
+  fullName: Clients.Client.CreateSystemConfig
+  nameWithType: Client.CreateSystemConfig
+- uid: Clients.Client.KeyExchange
+  name: KeyExchange()
+  href: api/Clients.Client.html#Clients_Client_KeyExchange
+  commentId: M:Clients.Client.KeyExchange
+  fullName: Clients.Client.KeyExchange()
+  nameWithType: Client.KeyExchange()
+- uid: Clients.Client.KeyExchange*
+  name: KeyExchange
+  href: api/Clients.Client.html#Clients_Client_KeyExchange_
+  commentId: Overload:Clients.Client.KeyExchange
+  isSpec: "True"
+  fullName: Clients.Client.KeyExchange
+  nameWithType: Client.KeyExchange
+- uid: Clients.Client.Leave
+  name: Leave()
+  href: api/Clients.Client.html#Clients_Client_Leave
+  commentId: M:Clients.Client.Leave
+  fullName: Clients.Client.Leave()
+  nameWithType: Client.Leave()
+- uid: Clients.Client.Leave*
+  name: Leave
+  href: api/Clients.Client.html#Clients_Client_Leave_
+  commentId: Overload:Clients.Client.Leave
+  isSpec: "True"
+  fullName: Clients.Client.Leave
+  nameWithType: Client.Leave
+- uid: Clients.Client.Login(System.String)
+  name: Login(String)
+  href: api/Clients.Client.html#Clients_Client_Login_System_String_
+  commentId: M:Clients.Client.Login(System.String)
+  fullName: Clients.Client.Login(System.String)
+  nameWithType: Client.Login(String)
+- uid: Clients.Client.Login*
+  name: Login
+  href: api/Clients.Client.html#Clients_Client_Login_
+  commentId: Overload:Clients.Client.Login
+  isSpec: "True"
+  fullName: Clients.Client.Login
+  nameWithType: Client.Login
+- uid: Clients.Client.OfflineGet
+  name: OfflineGet()
+  href: api/Clients.Client.html#Clients_Client_OfflineGet
+  commentId: M:Clients.Client.OfflineGet
+  fullName: Clients.Client.OfflineGet()
+  nameWithType: Client.OfflineGet()
+- uid: Clients.Client.OfflineGet*
+  name: OfflineGet
+  href: api/Clients.Client.html#Clients_Client_OfflineGet_
+  commentId: Overload:Clients.Client.OfflineGet
+  isSpec: "True"
+  fullName: Clients.Client.OfflineGet
+  nameWithType: Client.OfflineGet
+- uid: Clients.Client.SendDeleteSignal(Accounts.Account,Message,System.Boolean)
+  name: SendDeleteSignal(Account, Message, Boolean)
+  href: api/Clients.Client.html#Clients_Client_SendDeleteSignal_Accounts_Account_Message_System_Boolean_
+  commentId: M:Clients.Client.SendDeleteSignal(Accounts.Account,Message,System.Boolean)
+  fullName: Clients.Client.SendDeleteSignal(Accounts.Account, Message, System.Boolean)
+  nameWithType: Client.SendDeleteSignal(Account, Message, Boolean)
+- uid: Clients.Client.SendDeleteSignal*
+  name: SendDeleteSignal
+  href: api/Clients.Client.html#Clients_Client_SendDeleteSignal_
+  commentId: Overload:Clients.Client.SendDeleteSignal
+  isSpec: "True"
+  fullName: Clients.Client.SendDeleteSignal
+  nameWithType: Client.SendDeleteSignal
+- uid: Clients.Client.SendMessage(Message,System.Byte[])
+  name: SendMessage(Message, Byte[])
+  href: api/Clients.Client.html#Clients_Client_SendMessage_Message_System_Byte___
+  commentId: M:Clients.Client.SendMessage(Message,System.Byte[])
+  name.vb: SendMessage(Message, Byte())
+  fullName: Clients.Client.SendMessage(Message, System.Byte[])
+  fullName.vb: Clients.Client.SendMessage(Message, System.Byte())
+  nameWithType: Client.SendMessage(Message, Byte[])
+  nameWithType.vb: Client.SendMessage(Message, Byte())
+- uid: Clients.Client.SendMessage*
+  name: SendMessage
+  href: api/Clients.Client.html#Clients_Client_SendMessage_
+  commentId: Overload:Clients.Client.SendMessage
+  isSpec: "True"
+  fullName: Clients.Client.SendMessage
+  nameWithType: Client.SendMessage
+- uid: Clients.Client.SendReadedSignal(Accounts.Account,Accounts.Account,Message)
+  name: SendReadedSignal(Account, Account, Message)
+  href: api/Clients.Client.html#Clients_Client_SendReadedSignal_Accounts_Account_Accounts_Account_Message_
+  commentId: M:Clients.Client.SendReadedSignal(Accounts.Account,Accounts.Account,Message)
+  fullName: Clients.Client.SendReadedSignal(Accounts.Account, Accounts.Account, Message)
+  nameWithType: Client.SendReadedSignal(Account, Account, Message)
+- uid: Clients.Client.SendReadedSignal*
+  name: SendReadedSignal
+  href: api/Clients.Client.html#Clients_Client_SendReadedSignal_
+  commentId: Overload:Clients.Client.SendReadedSignal
+  isSpec: "True"
+  fullName: Clients.Client.SendReadedSignal
+  nameWithType: Client.SendReadedSignal
+- uid: Clients.Client.SendRecievedSignal(Accounts.Account,Accounts.Account,Message)
+  name: SendRecievedSignal(Account, Account, Message)
+  href: api/Clients.Client.html#Clients_Client_SendRecievedSignal_Accounts_Account_Accounts_Account_Message_
+  commentId: M:Clients.Client.SendRecievedSignal(Accounts.Account,Accounts.Account,Message)
+  fullName: Clients.Client.SendRecievedSignal(Accounts.Account, Accounts.Account, Message)
+  nameWithType: Client.SendRecievedSignal(Account, Account, Message)
+- uid: Clients.Client.SendRecievedSignal*
+  name: SendRecievedSignal
+  href: api/Clients.Client.html#Clients_Client_SendRecievedSignal_
+  commentId: Overload:Clients.Client.SendRecievedSignal
+  isSpec: "True"
+  fullName: Clients.Client.SendRecievedSignal
+  nameWithType: Client.SendRecievedSignal
+- uid: Clients.Client.Store
+  name: Store()
+  href: api/Clients.Client.html#Clients_Client_Store
+  commentId: M:Clients.Client.Store
+  fullName: Clients.Client.Store()
+  nameWithType: Client.Store()
+- uid: Clients.Client.Store*
+  name: Store
+  href: api/Clients.Client.html#Clients_Client_Store_
+  commentId: Overload:Clients.Client.Store
+  isSpec: "True"
+  fullName: Clients.Client.Store
+  nameWithType: Client.Store
+- uid: Clients.Client.ThreadFunc
+  name: ThreadFunc()
+  href: api/Clients.Client.html#Clients_Client_ThreadFunc
+  commentId: M:Clients.Client.ThreadFunc
+  fullName: Clients.Client.ThreadFunc()
+  nameWithType: Client.ThreadFunc()
+- uid: Clients.Client.ThreadFunc*
+  name: ThreadFunc
+  href: api/Clients.Client.html#Clients_Client_ThreadFunc_
+  commentId: Overload:Clients.Client.ThreadFunc
+  isSpec: "True"
+  fullName: Clients.Client.ThreadFunc
+  nameWithType: Client.ThreadFunc
+- uid: Cryptographi
+  name: Cryptographi
+  href: api/Cryptographi.html
+  commentId: N:Cryptographi
+  fullName: Cryptographi
+  nameWithType: Cryptographi
+- uid: Cryptographi.Cryptography
+  name: Cryptography
+  href: api/Cryptographi.Cryptography.html
+  commentId: T:Cryptographi.Cryptography
+  fullName: Cryptographi.Cryptography
+  nameWithType: Cryptography
+- uid: Cryptographi.Cryptography.CreateKey(System.Boolean)
+  name: CreateKey(Boolean)
+  href: api/Cryptographi.Cryptography.html#Cryptographi_Cryptography_CreateKey_System_Boolean_
+  commentId: M:Cryptographi.Cryptography.CreateKey(System.Boolean)
+  fullName: Cryptographi.Cryptography.CreateKey(System.Boolean)
+  nameWithType: Cryptography.CreateKey(Boolean)
+- uid: Cryptographi.Cryptography.CreateKey*
+  name: CreateKey
+  href: api/Cryptographi.Cryptography.html#Cryptographi_Cryptography_CreateKey_
+  commentId: Overload:Cryptographi.Cryptography.CreateKey
+  isSpec: "True"
+  fullName: Cryptographi.Cryptography.CreateKey
+  nameWithType: Cryptography.CreateKey
+- uid: Cryptographi.Cryptography.DecryptFile(System.Byte[],System.Byte[])
+  name: DecryptFile(Byte[], Byte[])
+  href: api/Cryptographi.Cryptography.html#Cryptographi_Cryptography_DecryptFile_System_Byte___System_Byte___
+  commentId: M:Cryptographi.Cryptography.DecryptFile(System.Byte[],System.Byte[])
+  name.vb: DecryptFile(Byte(), Byte())
+  fullName: Cryptographi.Cryptography.DecryptFile(System.Byte[], System.Byte[])
+  fullName.vb: Cryptographi.Cryptography.DecryptFile(System.Byte(), System.Byte())
+  nameWithType: Cryptography.DecryptFile(Byte[], Byte[])
+  nameWithType.vb: Cryptography.DecryptFile(Byte(), Byte())
+- uid: Cryptographi.Cryptography.DecryptFile*
+  name: DecryptFile
+  href: api/Cryptographi.Cryptography.html#Cryptographi_Cryptography_DecryptFile_
+  commentId: Overload:Cryptographi.Cryptography.DecryptFile
+  isSpec: "True"
+  fullName: Cryptographi.Cryptography.DecryptFile
+  nameWithType: Cryptography.DecryptFile
+- uid: Cryptographi.Cryptography.DecryptMessage(System.Byte[],System.Byte[])
+  name: DecryptMessage(Byte[], Byte[])
+  href: api/Cryptographi.Cryptography.html#Cryptographi_Cryptography_DecryptMessage_System_Byte___System_Byte___
+  commentId: M:Cryptographi.Cryptography.DecryptMessage(System.Byte[],System.Byte[])
+  name.vb: DecryptMessage(Byte(), Byte())
+  fullName: Cryptographi.Cryptography.DecryptMessage(System.Byte[], System.Byte[])
+  fullName.vb: Cryptographi.Cryptography.DecryptMessage(System.Byte(), System.Byte())
+  nameWithType: Cryptography.DecryptMessage(Byte[], Byte[])
+  nameWithType.vb: Cryptography.DecryptMessage(Byte(), Byte())
+- uid: Cryptographi.Cryptography.DecryptMessage*
+  name: DecryptMessage
+  href: api/Cryptographi.Cryptography.html#Cryptographi_Cryptography_DecryptMessage_
+  commentId: Overload:Cryptographi.Cryptography.DecryptMessage
+  isSpec: "True"
+  fullName: Cryptographi.Cryptography.DecryptMessage
+  nameWithType: Cryptography.DecryptMessage
+- uid: Cryptographi.Cryptography.EncryptFile(System.String,System.Byte[])
+  name: EncryptFile(String, Byte[])
+  href: api/Cryptographi.Cryptography.html#Cryptographi_Cryptography_EncryptFile_System_String_System_Byte___
+  commentId: M:Cryptographi.Cryptography.EncryptFile(System.String,System.Byte[])
+  name.vb: EncryptFile(String, Byte())
+  fullName: Cryptographi.Cryptography.EncryptFile(System.String, System.Byte[])
+  fullName.vb: Cryptographi.Cryptography.EncryptFile(System.String, System.Byte())
+  nameWithType: Cryptography.EncryptFile(String, Byte[])
+  nameWithType.vb: Cryptography.EncryptFile(String, Byte())
+- uid: Cryptographi.Cryptography.EncryptFile*
+  name: EncryptFile
+  href: api/Cryptographi.Cryptography.html#Cryptographi_Cryptography_EncryptFile_
+  commentId: Overload:Cryptographi.Cryptography.EncryptFile
+  isSpec: "True"
+  fullName: Cryptographi.Cryptography.EncryptFile
+  nameWithType: Cryptography.EncryptFile
+- uid: Cryptographi.Cryptography.EncryptMessage(Message,System.Byte[])
+  name: EncryptMessage(Message, Byte[])
+  href: api/Cryptographi.Cryptography.html#Cryptographi_Cryptography_EncryptMessage_Message_System_Byte___
+  commentId: M:Cryptographi.Cryptography.EncryptMessage(Message,System.Byte[])
+  name.vb: EncryptMessage(Message, Byte())
+  fullName: Cryptographi.Cryptography.EncryptMessage(Message, System.Byte[])
+  fullName.vb: Cryptographi.Cryptography.EncryptMessage(Message, System.Byte())
+  nameWithType: Cryptography.EncryptMessage(Message, Byte[])
+  nameWithType.vb: Cryptography.EncryptMessage(Message, Byte())
+- uid: Cryptographi.Cryptography.EncryptMessage*
+  name: EncryptMessage
+  href: api/Cryptographi.Cryptography.html#Cryptographi_Cryptography_EncryptMessage_
+  commentId: Overload:Cryptographi.Cryptography.EncryptMessage
+  isSpec: "True"
+  fullName: Cryptographi.Cryptography.EncryptMessage
+  nameWithType: Cryptography.EncryptMessage
+- uid: Cryptographi.Cryptography.EncryptSymKey(System.Byte[][],System.Byte[])
+  name: EncryptSymKey(Byte[][], Byte[])
+  href: api/Cryptographi.Cryptography.html#Cryptographi_Cryptography_EncryptSymKey_System_Byte_____System_Byte___
+  commentId: M:Cryptographi.Cryptography.EncryptSymKey(System.Byte[][],System.Byte[])
+  name.vb: EncryptSymKey(Byte()(), Byte())
+  fullName: Cryptographi.Cryptography.EncryptSymKey(System.Byte[][], System.Byte[])
+  fullName.vb: Cryptographi.Cryptography.EncryptSymKey(System.Byte()(), System.Byte())
+  nameWithType: Cryptography.EncryptSymKey(Byte[][], Byte[])
+  nameWithType.vb: Cryptography.EncryptSymKey(Byte()(), Byte())
+- uid: Cryptographi.Cryptography.EncryptSymKey*
+  name: EncryptSymKey
+  href: api/Cryptographi.Cryptography.html#Cryptographi_Cryptography_EncryptSymKey_
+  commentId: Overload:Cryptographi.Cryptography.EncryptSymKey
+  isSpec: "True"
+  fullName: Cryptographi.Cryptography.EncryptSymKey
+  nameWithType: Cryptography.EncryptSymKey
+- uid: Interface
+  name: Interface
+  href: api/Interface.html
+  commentId: N:Interface
+  fullName: Interface
+  nameWithType: Interface
+- uid: Interface.Emoji
+  name: Emoji
+  href: api/Interface.Emoji.html
+  commentId: T:Interface.Emoji
+  fullName: Interface.Emoji
+  nameWithType: Emoji
+- uid: Interface.Emoji.#ctor(System.String)
+  name: Emoji(String)
+  href: api/Interface.Emoji.html#Interface_Emoji__ctor_System_String_
+  commentId: M:Interface.Emoji.#ctor(System.String)
+  fullName: Interface.Emoji.Emoji(System.String)
+  nameWithType: Emoji.Emoji(String)
+- uid: Interface.Emoji.#ctor*
+  name: Emoji
+  href: api/Interface.Emoji.html#Interface_Emoji__ctor_
+  commentId: Overload:Interface.Emoji.#ctor
+  isSpec: "True"
+  fullName: Interface.Emoji.Emoji
+  nameWithType: Emoji.Emoji
+- uid: Interface.Emoji.Compress(System.String)
+  name: Compress(String)
+  href: api/Interface.Emoji.html#Interface_Emoji_Compress_System_String_
+  commentId: M:Interface.Emoji.Compress(System.String)
+  fullName: Interface.Emoji.Compress(System.String)
+  nameWithType: Emoji.Compress(String)
+- uid: Interface.Emoji.Compress*
+  name: Compress
+  href: api/Interface.Emoji.html#Interface_Emoji_Compress_
+  commentId: Overload:Interface.Emoji.Compress
+  isSpec: "True"
+  fullName: Interface.Emoji.Compress
+  nameWithType: Emoji.Compress
+- uid: Interface.Font_Style
+  name: Font_Style
+  href: api/Interface.Font_Style.html
+  commentId: T:Interface.Font_Style
+  fullName: Interface.Font_Style
+  nameWithType: Font_Style
+- uid: Interface.Interface
+  name: Interface
+  href: api/Interface.Interface.html
+  commentId: T:Interface.Interface
+  fullName: Interface.Interface
+  nameWithType: Interface
+- uid: Interface.Interface.#ctor
+  name: Interface()
+  href: api/Interface.Interface.html#Interface_Interface__ctor
+  commentId: M:Interface.Interface.#ctor
+  fullName: Interface.Interface.Interface()
+  nameWithType: Interface.Interface()
+- uid: Interface.Interface.#ctor(Interface.Theme,Interface.Font_Style,System.String)
+  name: Interface(Theme, Font_Style, String)
+  href: api/Interface.Interface.html#Interface_Interface__ctor_Interface_Theme_Interface_Font_Style_System_String_
+  commentId: M:Interface.Interface.#ctor(Interface.Theme,Interface.Font_Style,System.String)
+  fullName: Interface.Interface.Interface(Interface.Theme, Interface.Font_Style, System.String)
+  nameWithType: Interface.Interface(Theme, Font_Style, String)
+- uid: Interface.Interface.#ctor*
+  name: Interface
+  href: api/Interface.Interface.html#Interface_Interface__ctor_
+  commentId: Overload:Interface.Interface.#ctor
+  isSpec: "True"
+  fullName: Interface.Interface.Interface
+  nameWithType: Interface.Interface
+- uid: Interface.Interface.CheckConfig
+  name: CheckConfig()
+  href: api/Interface.Interface.html#Interface_Interface_CheckConfig
+  commentId: M:Interface.Interface.CheckConfig
+  fullName: Interface.Interface.CheckConfig()
+  nameWithType: Interface.CheckConfig()
+- uid: Interface.Interface.CheckConfig*
+  name: CheckConfig
+  href: api/Interface.Interface.html#Interface_Interface_CheckConfig_
+  commentId: Overload:Interface.Interface.CheckConfig
+  isSpec: "True"
+  fullName: Interface.Interface.CheckConfig
+  nameWithType: Interface.CheckConfig
+- uid: Interface.Interface.SaveConfig(Interface.Theme,Interface.Font_Style)
+  name: SaveConfig(Theme, Font_Style)
+  href: api/Interface.Interface.html#Interface_Interface_SaveConfig_Interface_Theme_Interface_Font_Style_
+  commentId: M:Interface.Interface.SaveConfig(Interface.Theme,Interface.Font_Style)
+  fullName: Interface.Interface.SaveConfig(Interface.Theme, Interface.Font_Style)
+  nameWithType: Interface.SaveConfig(Theme, Font_Style)
+- uid: Interface.Interface.SaveConfig*
+  name: SaveConfig
+  href: api/Interface.Interface.html#Interface_Interface_SaveConfig_
+  commentId: Overload:Interface.Interface.SaveConfig
+  isSpec: "True"
+  fullName: Interface.Interface.SaveConfig
+  nameWithType: Interface.SaveConfig
+- uid: Interface.Theme
+  name: Theme
+  href: api/Interface.Theme.html
+  commentId: T:Interface.Theme
+  fullName: Interface.Theme
+  nameWithType: Theme
+- uid: Servers
+  name: Servers
+  href: api/Servers.html
+  commentId: N:Servers
+  fullName: Servers
+  nameWithType: Servers
+- uid: Servers.Server
+  name: Server
+  href: api/Servers.Server.html
+  commentId: T:Servers.Server
+  fullName: Servers.Server
+  nameWithType: Server
+- uid: Servers.Server.#ctor
+  name: Server()
+  href: api/Servers.Server.html#Servers_Server__ctor
+  commentId: M:Servers.Server.#ctor
+  fullName: Servers.Server.Server()
+  nameWithType: Server.Server()
+- uid: Servers.Server.#ctor*
+  name: Server
+  href: api/Servers.Server.html#Servers_Server__ctor_
+  commentId: Overload:Servers.Server.#ctor
+  isSpec: "True"
+  fullName: Servers.Server.Server
+  nameWithType: Server.Server
+- uid: Servers.Server.BroadcastStatus(Accounts.Account)
+  name: BroadcastStatus(Account)
+  href: api/Servers.Server.html#Servers_Server_BroadcastStatus_Accounts_Account_
+  commentId: M:Servers.Server.BroadcastStatus(Accounts.Account)
+  fullName: Servers.Server.BroadcastStatus(Accounts.Account)
+  nameWithType: Server.BroadcastStatus(Account)
+- uid: Servers.Server.BroadcastStatus*
+  name: BroadcastStatus
+  href: api/Servers.Server.html#Servers_Server_BroadcastStatus_
+  commentId: Overload:Servers.Server.BroadcastStatus
+  isSpec: "True"
+  fullName: Servers.Server.BroadcastStatus
+  nameWithType: Server.BroadcastStatus
+- uid: Servers.Server.GetMessageHistory(Accounts.Account)
+  name: GetMessageHistory(Account)
+  href: api/Servers.Server.html#Servers_Server_GetMessageHistory_Accounts_Account_
+  commentId: M:Servers.Server.GetMessageHistory(Accounts.Account)
+  fullName: Servers.Server.GetMessageHistory(Accounts.Account)
+  nameWithType: Server.GetMessageHistory(Account)
+- uid: Servers.Server.GetMessageHistory*
+  name: GetMessageHistory
+  href: api/Servers.Server.html#Servers_Server_GetMessageHistory_
+  commentId: Overload:Servers.Server.GetMessageHistory
+  isSpec: "True"
+  fullName: Servers.Server.GetMessageHistory
+  nameWithType: Server.GetMessageHistory
+- uid: Servers.Server.KeyExchange(Accounts.Account)
+  name: KeyExchange(Account)
+  href: api/Servers.Server.html#Servers_Server_KeyExchange_Accounts_Account_
+  commentId: M:Servers.Server.KeyExchange(Accounts.Account)
+  fullName: Servers.Server.KeyExchange(Accounts.Account)
+  nameWithType: Server.KeyExchange(Account)
+- uid: Servers.Server.KeyExchange*
+  name: KeyExchange
+  href: api/Servers.Server.html#Servers_Server_KeyExchange_
+  commentId: Overload:Servers.Server.KeyExchange
+  isSpec: "True"
+  fullName: Servers.Server.KeyExchange
+  nameWithType: Server.KeyExchange
+- uid: Servers.Server.Ping(Accounts.Account)
+  name: Ping(Account)
+  href: api/Servers.Server.html#Servers_Server_Ping_Accounts_Account_
+  commentId: M:Servers.Server.Ping(Accounts.Account)
+  fullName: Servers.Server.Ping(Accounts.Account)
+  nameWithType: Server.Ping(Account)
+- uid: Servers.Server.Ping*
+  name: Ping
+  href: api/Servers.Server.html#Servers_Server_Ping_
+  commentId: Overload:Servers.Server.Ping
+  isSpec: "True"
+  fullName: Servers.Server.Ping
+  nameWithType: Server.Ping
+- uid: Servers.Server.Save(Accounts.Account,Message)
+  name: Save(Account, Message)
+  href: api/Servers.Server.html#Servers_Server_Save_Accounts_Account_Message_
+  commentId: M:Servers.Server.Save(Accounts.Account,Message)
+  fullName: Servers.Server.Save(Accounts.Account, Message)
+  nameWithType: Server.Save(Account, Message)
+- uid: Servers.Server.Save*
+  name: Save
+  href: api/Servers.Server.html#Servers_Server_Save_
+  commentId: Overload:Servers.Server.Save
+  isSpec: "True"
+  fullName: Servers.Server.Save
+  nameWithType: Server.Save
+- uid: Servers.Server.SendDeleteSignal(Accounts.Account,Accounts.Account,Message,System.Boolean)
+  name: SendDeleteSignal(Account, Account, Message, Boolean)
+  href: api/Servers.Server.html#Servers_Server_SendDeleteSignal_Accounts_Account_Accounts_Account_Message_System_Boolean_
+  commentId: M:Servers.Server.SendDeleteSignal(Accounts.Account,Accounts.Account,Message,System.Boolean)
+  fullName: Servers.Server.SendDeleteSignal(Accounts.Account, Accounts.Account, Message, System.Boolean)
+  nameWithType: Server.SendDeleteSignal(Account, Account, Message, Boolean)
+- uid: Servers.Server.SendDeleteSignal*
+  name: SendDeleteSignal
+  href: api/Servers.Server.html#Servers_Server_SendDeleteSignal_
+  commentId: Overload:Servers.Server.SendDeleteSignal
+  isSpec: "True"
+  fullName: Servers.Server.SendDeleteSignal
+  nameWithType: Server.SendDeleteSignal
+- uid: Servers.Server.SendMessages(Accounts.Account,Message[])
+  name: SendMessages(Account, Message[])
+  href: api/Servers.Server.html#Servers_Server_SendMessages_Accounts_Account_Message___
+  commentId: M:Servers.Server.SendMessages(Accounts.Account,Message[])
+  name.vb: SendMessages(Account, Message())
+  fullName: Servers.Server.SendMessages(Accounts.Account, Message[])
+  fullName.vb: Servers.Server.SendMessages(Accounts.Account, Message())
+  nameWithType: Server.SendMessages(Account, Message[])
+  nameWithType.vb: Server.SendMessages(Account, Message())
+- uid: Servers.Server.SendMessages*
+  name: SendMessages
+  href: api/Servers.Server.html#Servers_Server_SendMessages_
+  commentId: Overload:Servers.Server.SendMessages
+  isSpec: "True"
+  fullName: Servers.Server.SendMessages
+  nameWithType: Server.SendMessages
+- uid: Servers.Server.SendReadedSignal(Accounts.Account,Accounts.Account,Message)
+  name: SendReadedSignal(Account, Account, Message)
+  href: api/Servers.Server.html#Servers_Server_SendReadedSignal_Accounts_Account_Accounts_Account_Message_
+  commentId: M:Servers.Server.SendReadedSignal(Accounts.Account,Accounts.Account,Message)
+  fullName: Servers.Server.SendReadedSignal(Accounts.Account, Accounts.Account, Message)
+  nameWithType: Server.SendReadedSignal(Account, Account, Message)
+- uid: Servers.Server.SendReadedSignal*
+  name: SendReadedSignal
+  href: api/Servers.Server.html#Servers_Server_SendReadedSignal_
+  commentId: Overload:Servers.Server.SendReadedSignal
+  isSpec: "True"
+  fullName: Servers.Server.SendReadedSignal
+  nameWithType: Server.SendReadedSignal
+- uid: Servers.Server.SendRecievedSignal(Accounts.Account,Accounts.Account,Message)
+  name: SendRecievedSignal(Account, Account, Message)
+  href: api/Servers.Server.html#Servers_Server_SendRecievedSignal_Accounts_Account_Accounts_Account_Message_
+  commentId: M:Servers.Server.SendRecievedSignal(Accounts.Account,Accounts.Account,Message)
+  fullName: Servers.Server.SendRecievedSignal(Accounts.Account, Accounts.Account, Message)
+  nameWithType: Server.SendRecievedSignal(Account, Account, Message)
+- uid: Servers.Server.SendRecievedSignal*
+  name: SendRecievedSignal
+  href: api/Servers.Server.html#Servers_Server_SendRecievedSignal_
+  commentId: Overload:Servers.Server.SendRecievedSignal
+  isSpec: "True"
+  fullName: Servers.Server.SendRecievedSignal
+  nameWithType: Server.SendRecievedSignal
+- uid: Servers.Server.ThreadFunc
+  name: ThreadFunc()
+  href: api/Servers.Server.html#Servers_Server_ThreadFunc
+  commentId: M:Servers.Server.ThreadFunc
+  fullName: Servers.Server.ThreadFunc()
+  nameWithType: Server.ThreadFunc()
+- uid: Servers.Server.ThreadFunc*
+  name: ThreadFunc
+  href: api/Servers.Server.html#Servers_Server_ThreadFunc_
+  commentId: Overload:Servers.Server.ThreadFunc
+  isSpec: "True"
+  fullName: Servers.Server.ThreadFunc
+  nameWithType: Server.ThreadFunc
